@@ -52,22 +52,31 @@ module ControllerActionNameHelpers
   # @param action_names [Array(Symbol,String)] the action name list
   # @param controller_names [Array(Symbol,String)] the controller name list
   # @return [Bolean] the action and controller name match lists
-  def action_controller?(action_names, controller_names)
+  def actions_controllers?(action_names, controller_names)
     action?(action_names) && controller?(controller_names)
   end
-  alias action_controller_name? action_controller?
 
-  ## Current controller and action name in lists
+  ## Controller of name and multiple actions
   #
-  # @example action name in array and controller name in array
-  #   action_controller?(%w[users members], ['index', :show, 'custom'])
-  # @param controller_names [Array(Symbol,String)] the controller name list
-  # @param action_names [Array(Symbol,String)] the action name list
-  # @return [Bolean] the action and controller name match lists
-  def controller_action?(controller_names, action_names)
-    action?(action_names) && controller?(controller_names)
+  # @example controller users and new, create, edit or update
+  #   controller_actions?(:users, :new, :create, :edit, :update)
+  # @param contr_name [Symbol,String] the controllers name
+  # @param action_names [List(Symbol,String)] the action names to match
+  # @return [Boolean] the controller is name and actions in list
+  def controller_actions?(contr_name, *action_names)
+    controller_name == contr_name.to_s && action?(*action_names)
   end
-  alias controller_action_name? controller_action?
+
+  ## Action of name and mutliple controllers
+  #
+  # @example action is custom and controller in list
+  #   action_controllers?(:custom_action_name, :users, :members, :guests)
+  # @param act_name [Symbol,String] the controllers name
+  # @param controller_names [List(Symbol,String)] the action names to match
+  # @return [Boolean] the action is name and controllers in list
+  def action_controllers?(act_name, *controller_names)
+    action_name == act_name.to_s && controller?(*controller_names)
+  end
 
   ## Current action name is index
   #
