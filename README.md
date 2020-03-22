@@ -1,6 +1,7 @@
 # Rails Controller Action Name Helpers
 
 [Repository - casaper/rails_controller_action_name_helpers](https://github.com/casaper/rails_controller_action_name_helpers)  
+[Documentation](https://casaper.github.io/rails_controller_action_name_helpers/)
 
 Simple view helpers to have more readable checks for current controller name or action name.
 
