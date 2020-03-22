@@ -1,0 +1,2220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: ControllerActionNameHelpers
+  
+    &mdash; Documentation by YARD 0.9.24
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "ControllerActionNameHelpers";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index (C)</a> &raquo;
+    
+    
+    <span class="title">ControllerActionNameHelpers</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Module: ControllerActionNameHelpers
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>app/helpers/controller_acttion_name_helpers.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Controller Action Name Helpers</p>
+
+<p>Simple view helpers to determine current action and controller name in a more readable manner within Rails views.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#a_edit%3F-instance_method" title="#a_edit? (instance method)">#<strong>a_edit?</strong>(without_update = false)  &#x21d2; Boolean </a>
+    
+
+    
+      (also: #action_edit?, #action_name_edit?)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Current action name is edit or update.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#a_index%3F-instance_method" title="#a_index? (instance method)">#<strong>a_index?</strong>  &#x21d2; Boolean </a>
+    
+
+    
+      (also: #action_index?, #action_name_index?)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Current action name is index.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#a_new%3F-instance_method" title="#a_new? (instance method)">#<strong>a_new?</strong>(without_create = false)  &#x21d2; Boolean </a>
+    
+
+    
+      (also: #action_new?, #action_name_new?)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Current action name is new or create.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#a_show%3F-instance_method" title="#a_show? (instance method)">#<strong>a_show?</strong>  &#x21d2; Boolean </a>
+    
+
+    
+      (also: #action_show?, #action_name_show?)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Current action name is show.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#action%3F-instance_method" title="#action? (instance method)">#<strong>action?</strong>(*action_names)  &#x21d2; Boolean </a>
+    
+
+    
+      (also: #action_name?, #action_name_in?)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Current action name is in name or multiple names.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#action_controllers%3F-instance_method" title="#action_controllers? (instance method)">#<strong>action_controllers?</strong>(act_name, *controller_names)  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Action of name and mutliple controllers.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#actions_controllers%3F-instance_method" title="#actions_controllers? (instance method)">#<strong>actions_controllers?</strong>(action_names, controller_names)  &#x21d2; Bolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Current action and controller name in lists.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ca_edit%3F-instance_method" title="#ca_edit? (instance method)">#<strong>ca_edit?</strong>(*controller_names)  &#x21d2; Boolean </a>
+    
+
+    
+      (also: #controller_names_edit?, #controller_edit?)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Current action name is edit or update and controller name is in list.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ca_index%3F-instance_method" title="#ca_index? (instance method)">#<strong>ca_index?</strong>(*controller_names)  &#x21d2; Boolean </a>
+    
+
+    
+      (also: #controller_index?, #controller_names_index?)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Current action name is index and controller name is in list.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ca_new%3F-instance_method" title="#ca_new? (instance method)">#<strong>ca_new?</strong>(*controller_names)  &#x21d2; Boolean </a>
+    
+
+    
+      (also: #controller_names_new?, #controller_new?)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Current action name is new or create and controller name is in list.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ca_show%3F-instance_method" title="#ca_show? (instance method)">#<strong>ca_show?</strong>(*controller_names)  &#x21d2; Boolean </a>
+    
+
+    
+      (also: #controller_names_show?, #controller_show?)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Current action name is show and controller name is in list.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#controller%3F-instance_method" title="#controller? (instance method)">#<strong>controller?</strong>(*controller_names)  &#x21d2; Boolean </a>
+    
+
+    
+      (also: #controller_name?, #controller_name_in?)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Current controller name is in name or multiple names.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#controller_actions%3F-instance_method" title="#controller_actions? (instance method)">#<strong>controller_actions?</strong>(contr_name, *action_names)  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Controller of name and multiple actions.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="a_edit?-instance_method">
+  
+    #<strong>a_edit?</strong>(without_update = false)  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='action_edit?-instance_method'>action_edit?</span>, <span id='action_name_edit?-instance_method'>action_name_edit?</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>Often controllers do `render :edit` when there is errors in forms. So it makes sense to be true when new or edit.</p>
+</div>
+  </div>
+
+
+<p>Current action name is edit or update</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>without_update</span>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>false</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>only edit action</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+119
+120
+121
+122
+123
+124
+125</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/controller_acttion_name_helpers.rb', line 119</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_a_edit?'>a_edit?</span><span class='lparen'>(</span><span class='id identifier rubyid_without_update'>without_update</span> <span class='op'>=</span> <span class='kw'>false</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_without_update'>without_update</span>
+    <span class='id identifier rubyid_action_name'>action_name</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>edit</span><span class='tstring_end'>&#39;</span></span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_action?'>action?</span><span class='lparen'>(</span><span class='symbol'>:edit</span><span class='comma'>,</span> <span class='symbol'>:update</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="a_index?-instance_method">
+  
+    #<strong>a_index?</strong>  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='action_index?-instance_method'>action_index?</span>, <span id='action_name_index?-instance_method'>action_name_index?</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Current action name is index</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+83
+84
+85</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/controller_acttion_name_helpers.rb', line 83</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_a_index?'>a_index?</span>
+  <span class='id identifier rubyid_action_name'>action_name</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>index</span><span class='tstring_end'>&#39;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="a_new?-instance_method">
+  
+    #<strong>a_new?</strong>(without_create = false)  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='action_new?-instance_method'>action_new?</span>, <span id='action_name_new?-instance_method'>action_name_new?</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>Often controllers do `render :new` when there is errors in forms. So it makes sense to be true when new or edit.</p>
+</div>
+  </div>
+
+
+<p>Current action name is new or create</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>without_create</span>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>false</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>only new action</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+103
+104
+105
+106
+107
+108
+109</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/controller_acttion_name_helpers.rb', line 103</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_a_new?'>a_new?</span><span class='lparen'>(</span><span class='id identifier rubyid_without_create'>without_create</span> <span class='op'>=</span> <span class='kw'>false</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_without_create'>without_create</span>
+    <span class='id identifier rubyid_action_name'>action_name</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>new</span><span class='tstring_end'>&#39;</span></span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_action?'>action?</span><span class='lparen'>(</span><span class='symbol'>:new</span><span class='comma'>,</span> <span class='symbol'>:create</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="a_show?-instance_method">
+  
+    #<strong>a_show?</strong>  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='action_show?-instance_method'>action_show?</span>, <span id='action_name_show?-instance_method'>action_name_show?</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Current action name is show</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+91
+92
+93</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/controller_acttion_name_helpers.rb', line 91</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_a_show?'>a_show?</span>
+  <span class='id identifier rubyid_action_name'>action_name</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>show</span><span class='tstring_end'>&#39;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="action?-instance_method">
+  
+    
+      <span class="overload">#<strong>action?</strong>(action_name)  &#x21d2; <tt>Boolean</tt> </span>
+    
+      <span class="overload">#<strong>action?</strong>(action_name1, action_name2)  &#x21d2; <tt>Boolean</tt> </span>
+    
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='action_name?-instance_method'>action_name?</span>, <span id='action_name_in?-instance_method'>action_name_in?</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Current action name is in name or multiple names</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>current action is index</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_action?'>action?</span><span class='lparen'>(</span><span class='symbol'>:index</span><span class='rparen'>)</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>current action is index or show</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_action?'>action?</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>index</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='symbol'>:show</span><span class='rparen'>)</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>use with an array of strings</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_action?'>action?</span><span class='lparen'>(</span><span class='op'>*</span><span class='qwords_beg'>%w[</span><span class='tstring_content'>index</span><span class='words_sep'> </span><span class='tstring_content'>show</span><span class='words_sep'> </span><span class='tstring_content'>custom</span><span class='tstring_end'>]</span></span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+
+  <p class="tag_title">Overloads:</p>
+  <ul class="overload">
+    
+      
+      <li class="overload_item">
+        <span class="signature">#<strong>action?</strong>(action_name)  &#x21d2; <tt>Boolean</tt> </span>
+        <div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>action_name</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a action name</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div>
+      </li>
+    
+      
+      <li class="overload_item">
+        <span class="signature">#<strong>action?</strong>(action_name1, action_name2)  &#x21d2; <tt>Boolean</tt> </span>
+        <div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>takes unlimited amount of action names.</p>
+</div>
+  </div>
+
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>action_name1</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a action name</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>action_name2</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a action name</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div>
+      </li>
+    
+  </ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the action name is in action_names</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+42
+43
+44</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/controller_acttion_name_helpers.rb', line 42</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_action?'>action?</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_action_names'>action_names</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_action_names'>action_names</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_action_name'>action_name</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="action_controllers?-instance_method">
+  
+    #<strong>action_controllers?</strong>(act_name, *controller_names)  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Action of name and mutliple controllers</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>action is custom and controller in list</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_action_controllers?'>action_controllers?</span><span class='lparen'>(</span><span class='symbol'>:custom_action_name</span><span class='comma'>,</span> <span class='symbol'>:users</span><span class='comma'>,</span> <span class='symbol'>:members</span><span class='comma'>,</span> <span class='symbol'>:guests</span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>act_name</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the controllers name</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>controller_names</span>
+      
+      
+        <span class='type'>(<tt>List(Symbol,String)</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the action names to match</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the action is name and controllers in list</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+77
+78
+79</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/controller_acttion_name_helpers.rb', line 77</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_action_controllers?'>action_controllers?</span><span class='lparen'>(</span><span class='id identifier rubyid_act_name'>act_name</span><span class='comma'>,</span> <span class='op'>*</span><span class='id identifier rubyid_controller_names'>controller_names</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_action_name'>action_name</span> <span class='op'>==</span> <span class='id identifier rubyid_act_name'>act_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_controller?'>controller?</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_controller_names'>controller_names</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="actions_controllers?-instance_method">
+  
+    #<strong>actions_controllers?</strong>(action_names, controller_names)  &#x21d2; <tt>Bolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Current action and controller name in lists</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>action name in array and controller name in array</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_action_controller?'>action_controller?</span><span class='lparen'>(</span><span class='qwords_beg'>%w[</span><span class='tstring_content'>index</span><span class='words_sep'> </span><span class='tstring_content'>show</span><span class='words_sep'> </span><span class='tstring_content'>custom</span><span class='tstring_end'>]</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='symbol'>:users</span><span class='comma'>,</span> <span class='symbol'>:members</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>guests</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>action_names</span>
+      
+      
+        <span class='type'>(<tt>Array(Symbol,String)</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the action name list</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>controller_names</span>
+      
+      
+        <span class='type'>(<tt>Array(Symbol,String)</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the controller name list</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Bolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the action and controller name match lists</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+55
+56
+57</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/controller_acttion_name_helpers.rb', line 55</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_actions_controllers?'>actions_controllers?</span><span class='lparen'>(</span><span class='id identifier rubyid_action_names'>action_names</span><span class='comma'>,</span> <span class='id identifier rubyid_controller_names'>controller_names</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_action?'>action?</span><span class='lparen'>(</span><span class='id identifier rubyid_action_names'>action_names</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_controller?'>controller?</span><span class='lparen'>(</span><span class='id identifier rubyid_controller_names'>controller_names</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="ca_edit?-instance_method">
+  
+    
+      <span class="overload">#<strong>ca_edit?</strong>(controller_name)  &#x21d2; <tt>Boolean</tt> </span>
+    
+      <span class="overload">#<strong>ca_edit?</strong>(controller_name1, controller_name2)  &#x21d2; <tt>Boolean</tt> </span>
+    
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='controller_names_edit?-instance_method'>controller_names_edit?</span>, <span id='controller_edit?-instance_method'>controller_edit?</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Current action name is edit or update and controller name is in list</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>current action is edit or update and controller name is users</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_ca_edit?'>ca_edit?</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>users</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>current action is edit or update and controller name is in list</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_ca_edit?'>ca_edit?</span><span class='lparen'>(</span><span class='symbol'>:users</span><span class='comma'>,</span> <span class='symbol'>:members</span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+
+  <p class="tag_title">Overloads:</p>
+  <ul class="overload">
+    
+      
+      <li class="overload_item">
+        <span class="signature">#<strong>ca_edit?</strong>(controller_name)  &#x21d2; <tt>Boolean</tt> </span>
+        <div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>controller_name</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a controller name</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div>
+      </li>
+    
+      
+      <li class="overload_item">
+        <span class="signature">#<strong>ca_edit?</strong>(controller_name1, controller_name2)  &#x21d2; <tt>Boolean</tt> </span>
+        <div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>takes unlimited amount of controller names.</p>
+</div>
+  </div>
+
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>controller_name1</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a controller name</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>controller_name2</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a controller name</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div>
+      </li>
+    
+  </ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the controller name is in list</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+199
+200
+201</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/controller_acttion_name_helpers.rb', line 199</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_ca_edit?'>ca_edit?</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_controller_names'>controller_names</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_a_edit?'>a_edit?</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_controller?'>controller?</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_controller_names'>controller_names</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="ca_index?-instance_method">
+  
+    
+      <span class="overload">#<strong>ca_index?</strong>(controller_name)  &#x21d2; <tt>Boolean</tt> </span>
+    
+      <span class="overload">#<strong>ca_index?</strong>(controller_name1, controller_name2)  &#x21d2; <tt>Boolean</tt> </span>
+    
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='controller_index?-instance_method'>controller_index?</span>, <span id='controller_names_index?-instance_method'>controller_names_index?</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Current action name is index and controller name is in list</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>current action is index and controller name is users</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_ca_index?'>ca_index?</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>users</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>current action is index and controller name is in list</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_ca_index?'>ca_index?</span><span class='lparen'>(</span><span class='symbol'>:users</span><span class='comma'>,</span> <span class='symbol'>:members</span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+
+  <p class="tag_title">Overloads:</p>
+  <ul class="overload">
+    
+      
+      <li class="overload_item">
+        <span class="signature">#<strong>ca_index?</strong>(controller_name)  &#x21d2; <tt>Boolean</tt> </span>
+        <div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>controller_name</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a controller name</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div>
+      </li>
+    
+      
+      <li class="overload_item">
+        <span class="signature">#<strong>ca_index?</strong>(controller_name1, controller_name2)  &#x21d2; <tt>Boolean</tt> </span>
+        <div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>takes unlimited amount of controller names.</p>
+</div>
+  </div>
+
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>controller_name1</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a controller name</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>controller_name2</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a controller name</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div>
+      </li>
+    
+  </ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the controller name is in list</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+142
+143
+144</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/controller_acttion_name_helpers.rb', line 142</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_ca_index?'>ca_index?</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_controller_names'>controller_names</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_a_index?'>a_index?</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_controller?'>controller?</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_controller_names'>controller_names</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="ca_new?-instance_method">
+  
+    
+      <span class="overload">#<strong>ca_new?</strong>(controller_name)  &#x21d2; <tt>Boolean</tt> </span>
+    
+      <span class="overload">#<strong>ca_new?</strong>(controller_name1, controller_name2)  &#x21d2; <tt>Boolean</tt> </span>
+    
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='controller_names_new?-instance_method'>controller_names_new?</span>, <span id='controller_new?-instance_method'>controller_new?</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Current action name is new or create and controller name is in list</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>current action is new or create and controller name is users</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_ca_new?'>ca_new?</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>users</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>current action is new or create and controller name is in list</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_ca_new?'>ca_new?</span><span class='lparen'>(</span><span class='symbol'>:users</span><span class='comma'>,</span> <span class='symbol'>:members</span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+
+  <p class="tag_title">Overloads:</p>
+  <ul class="overload">
+    
+      
+      <li class="overload_item">
+        <span class="signature">#<strong>ca_new?</strong>(controller_name)  &#x21d2; <tt>Boolean</tt> </span>
+        <div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>controller_name</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a controller name</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div>
+      </li>
+    
+      
+      <li class="overload_item">
+        <span class="signature">#<strong>ca_new?</strong>(controller_name1, controller_name2)  &#x21d2; <tt>Boolean</tt> </span>
+        <div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>takes unlimited amount of controller names.</p>
+</div>
+  </div>
+
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>controller_name1</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a controller name</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>controller_name2</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a controller name</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div>
+      </li>
+    
+  </ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the controller name is in list</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+180
+181
+182</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/controller_acttion_name_helpers.rb', line 180</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_ca_new?'>ca_new?</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_controller_names'>controller_names</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_a_new?'>a_new?</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_controller?'>controller?</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_controller_names'>controller_names</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="ca_show?-instance_method">
+  
+    
+      <span class="overload">#<strong>ca_show?</strong>(controller_name)  &#x21d2; <tt>Boolean</tt> </span>
+    
+      <span class="overload">#<strong>ca_show?</strong>(controller_name1, controller_name2)  &#x21d2; <tt>Boolean</tt> </span>
+    
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='controller_names_show?-instance_method'>controller_names_show?</span>, <span id='controller_show?-instance_method'>controller_show?</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Current action name is show and controller name is in list</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>current action is show and controller name is users</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_ca_show?'>ca_show?</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>users</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>current action is show and controller name is in list</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_ca_show?'>ca_show?</span><span class='lparen'>(</span><span class='symbol'>:users</span><span class='comma'>,</span> <span class='symbol'>:members</span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+
+  <p class="tag_title">Overloads:</p>
+  <ul class="overload">
+    
+      
+      <li class="overload_item">
+        <span class="signature">#<strong>ca_show?</strong>(controller_name)  &#x21d2; <tt>Boolean</tt> </span>
+        <div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>controller_name</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a controller name</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div>
+      </li>
+    
+      
+      <li class="overload_item">
+        <span class="signature">#<strong>ca_show?</strong>(controller_name1, controller_name2)  &#x21d2; <tt>Boolean</tt> </span>
+        <div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>takes unlimited amount of controller names.</p>
+</div>
+  </div>
+
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>controller_name1</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a controller name</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>controller_name2</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a controller name</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div>
+      </li>
+    
+  </ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the controller name is in list</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+161
+162
+163</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/controller_acttion_name_helpers.rb', line 161</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_ca_show?'>ca_show?</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_controller_names'>controller_names</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_a_show?'>a_show?</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_controller?'>controller?</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_controller_names'>controller_names</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="controller?-instance_method">
+  
+    
+      <span class="overload">#<strong>controller?</strong>(controller_name)  &#x21d2; <tt>Boolean</tt> </span>
+    
+      <span class="overload">#<strong>controller?</strong>(controller_name1, controller_name2)  &#x21d2; <tt>Boolean</tt> </span>
+    
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='controller_name?-instance_method'>controller_name?</span>, <span id='controller_name_in?-instance_method'>controller_name_in?</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Current controller name is in name or multiple names</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>current controller_name is users</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_controller?'>controller?</span><span class='lparen'>(</span><span class='symbol'>:users</span><span class='rparen'>)</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>current controller_name is in list</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_controller?'>controller?</span><span class='lparen'>(</span><span class='symbol'>:users</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>members</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>use with an array of symbols</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_controller?'>controller?</span><span class='lparen'>(</span><span class='op'>*</span><span class='qsymbols_beg'>%i[</span><span class='tstring_content'>users</span><span class='words_sep'> </span><span class='tstring_content'>members</span><span class='words_sep'> </span><span class='tstring_content'>guests</span><span class='tstring_end'>]</span></span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+
+  <p class="tag_title">Overloads:</p>
+  <ul class="overload">
+    
+      
+      <li class="overload_item">
+        <span class="signature">#<strong>controller?</strong>(controller_name)  &#x21d2; <tt>Boolean</tt> </span>
+        <div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>controller_name</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a controller name</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div>
+      </li>
+    
+      
+      <li class="overload_item">
+        <span class="signature">#<strong>controller?</strong>(controller_name1, controller_name2)  &#x21d2; <tt>Boolean</tt> </span>
+        <div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>takes unlimited amount of controller names.</p>
+</div>
+  </div>
+
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>controller_name1</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a controller name</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>controller_name2</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a controller name</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div>
+      </li>
+    
+  </ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the controller name is in list</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+21
+22
+23</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/controller_acttion_name_helpers.rb', line 21</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_controller?'>controller?</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_controller_names'>controller_names</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_controller_names'>controller_names</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_controller_name'>controller_name</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="controller_actions?-instance_method">
+  
+    #<strong>controller_actions?</strong>(contr_name, *action_names)  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Controller of name and multiple actions</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>controller users and new, create, edit or update</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_controller_actions?'>controller_actions?</span><span class='lparen'>(</span><span class='symbol'>:users</span><span class='comma'>,</span> <span class='symbol'>:new</span><span class='comma'>,</span> <span class='symbol'>:create</span><span class='comma'>,</span> <span class='symbol'>:edit</span><span class='comma'>,</span> <span class='symbol'>:update</span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>contr_name</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>, <tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the controllers name</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>action_names</span>
+      
+      
+        <span class='type'>(<tt>List(Symbol,String)</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the action names to match</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the controller is name and actions in list</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+66
+67
+68</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/helpers/controller_acttion_name_helpers.rb', line 66</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_controller_actions?'>controller_actions?</span><span class='lparen'>(</span><span class='id identifier rubyid_contr_name'>contr_name</span><span class='comma'>,</span> <span class='op'>*</span><span class='id identifier rubyid_action_names'>action_names</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_controller_name'>controller_name</span> <span class='op'>==</span> <span class='id identifier rubyid_contr_name'>contr_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_action?'>action?</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_action_names'>action_names</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Sun Mar 22 14:22:00 2020 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.24 (ruby-2.6.5).
+</div>
+
+    </div>
+  </body>
+</html>
