@@ -53,7 +53,7 @@ module ControllerActionNameHelpers
   # @param controller_names [Array(Symbol,String)] the controller name list
   # @return [Bolean] the action and controller name match lists
   def actions_controllers?(action_names, controller_names)
-    action?(action_names) && controller?(controller_names)
+    action?(*action_names) && controller?(*controller_names)
   end
 
   ## Controller of name and multiple actions
