@@ -22,6 +22,7 @@ module ControllerActionNameHelpers
     controller_names.map(&:to_s).include?(controller_name)
   end
   alias controller_name? controller?
+  alias controller_in? controller?
   alias controller_name_in? controller?
 
   ## Current action name is in name or multiple names
@@ -43,6 +44,7 @@ module ControllerActionNameHelpers
     action_names.map(&:to_s).include?(action_name)
   end
   alias action_name? action?
+  alias action_in? action?
   alias action_name_in? action?
 
   ## Current action and controller name in lists
