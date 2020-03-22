@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rails_controller_action_name_helpers (0.1.2)
+    rails_controller_action_name_helpers (0.1.4)
       rails (> 4.0.0)
 
 GEM
